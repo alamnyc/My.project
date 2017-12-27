@@ -26,6 +26,7 @@ public class LoginStepDef {
 	public void admin_click_login_button() throws Throwable {
 	LoginHomeFactory obj = new LoginHomeFactory(driver);
 	obj.getSubmotButton().click();
+	driver.close();
 	}
     @Then("^Admin receives a confirmation$")
 	public void admin_receives_a_confirmation() throws Throwable {

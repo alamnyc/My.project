@@ -3,13 +3,13 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [jenkins]">
   <test name="Nopackage(failed)">
     <classes>
-      <class name="com.testngrunner.TestNGRunner">
+      <class name="com.testngrunner.TestNGRunnerOutLine">
         <methods>
           <include name="setUpClass"/>
           <include name="feature" invocation-numbers="0"/>
           <include name="tearDownClass"/>
         </methods>
-      </class> <!-- com.testngrunner.TestNGRunner -->
+      </class> <!-- com.testngrunner.TestNGRunnerOutLine -->
     </classes>
   </test> <!-- Nopackage(failed) -->
 </suite> <!-- Failed suite [jenkins] -->
