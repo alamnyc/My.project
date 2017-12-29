@@ -8,53 +8,15 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Suite1</th></tr>
-<tr><td><a href="#t0">Nopackage</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">868</td><td></td><td></td></tr>
+<tr><th colspan="7">SmokleTestscenario</th></tr>
+<tr><td><a href="#t0">Sprint1</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">55</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Nopackage &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.testngrunner.LoginRunner</td><td><a href="#m0">feature</a></td><td rowspan="1">1513890491792</td><td rowspan="1">200</td></tr><tr class="failedodd"><td rowspan="1">com.testngrunner.TestNGRunner</td><td><a href="#m1">feature</a></td><td rowspan="1">1513890492060</td><td rowspan="1">21</td></tr><tr class="failedeven"><td rowspan="1">com.testngrunner.TestNGRunnerOutLine</td><td><a href="#m2">feature</a></td><td rowspan="1">1513890492157</td><td rowspan="1">99</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SmokleTestscenario</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Sprint1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testNGclass.Testcase3</td><td><a href="#m0">TestWatsup</a></td><td rowspan="1">1514585151054</td><td rowspan="1">4</td></tr><tr><th colspan="4">Sprint1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testNGclass.Testcase1</td><td><a href="#m1">TestFB</a></td><td rowspan="1">1514585151033</td><td rowspan="1">12</td></tr><tr class="passedodd"><td rowspan="1">testNGclass.Testcase2</td><td><a href="#m2">TestTwiter</a></td><td rowspan="1">1514585151050</td><td rowspan="1">2</td></tr></tbody>
 </table>
-<h2>Nopackage</h2><h3 id="m0">com.testngrunner.LoginRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>As a admin login homepage</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-Caused by: java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:469)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:109)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
-	at com.stefdefination.LoginStepDef.admin_visit_homepage(LoginStepDef.java:15)
-	at ✽.Given Admin visit homepage(Login.feature:6)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.testngrunner.TestNGRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>User registration</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-Caused by: java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:469)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:109)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
-	at com.stefdefination.StepDefinationOutLine.user_is_on_facebook_login_Page(StepDefinationOutLine.java:17)
-	at com.stefdefination.StepDefination.user_visit_homepage(StepDefination.java:16)
-	at ✽.Given user visit homepage(Register.feature:9)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.testngrunner.TestNGRunnerOutLine#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Login function validation</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-Caused by: java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:469)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:109)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
-	at com.stefdefination.StepDefinationOutLine.user_is_on_facebook_login_Page(StepDefinationOutLine.java:17)
-	at ✽.Given User is on facebook login Page(OutLine.feature:5)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Sprint1</h2><h3 id="m0">testNGclass.Testcase3#TestWatsup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at testNGclass.Testcase3.TestWatsup(Testcase3.java:10)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testNGclass.Testcase1#TestFB</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testNGclass.Testcase2#TestTwiter</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

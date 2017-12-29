@@ -10,18 +10,15 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginHomeFactory {
 
 	WebDriver driver;
-	
-    public LoginHomeFactory(WebDriver driver) {
+	public LoginHomeFactory(WebDriver driver) {
 	this.driver = driver;
 	PageFactory.initElements(driver, this);
-}
-    
+    }
     @FindBy(how = How.XPATH, using = ".//*[@id='authUser']")
     @CacheLookup
     WebElement user_name;
     public WebElement getUserName() {
     return user_name;
-
     }
     @FindBy(how = How.XPATH, using = ".//*[@id='clearPass']")
     @CacheLookup
@@ -34,8 +31,4 @@ public class LoginHomeFactory {
     WebElement SubmitBotton;
     public WebElement getSubmotButton() {
     return SubmitBotton;
-
-
-
-
-}}
+    }}
