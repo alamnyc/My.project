@@ -2,32 +2,25 @@ package com.stefdefination;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import com.homepagefactory.HomePageFactory;
 
+import com.homepagefactory.HomePageFactory;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class StepDefination {
-	WebDriver driver;
-		
+    WebDriver driver;
 	@Given("^user visit homepage$")
-	public void user_visit_homepage() throws Throwable {
 	
-
+	public void user_visit_homepage() throws Throwable {
 		
-		
-		
-		
-		
-  System.setProperty("webdriver.chrome.driver", "./DriverBrowser/chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver", "./DriverBrowser/chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.get("http://newtours.demoaut.com/");
 			driver.manage().window().maximize();
 	}
-
-	@When("^user click on register link$")
+    @When("^user click on register link$")
 	public void user_click_on_register_link() throws Throwable {
 	HomePageFactory obj = new HomePageFactory(driver);
 	obj.getHomePageTitleText().click();
@@ -49,7 +42,7 @@ public class StepDefination {
 	public void user_recieves_a_confirmation() throws Throwable {
 		
 	 System.out.println("Actual Home Page Title::"+driver.getTitle());
-	/*	  System.out.println("Expected Home Page Tile::"+PageFactory.getHomePageTitleText());
+	/*	  System.out.println("Expected Home Page Tile::"+ pagefactory.getHomePageTitleText());
 	   // verify
 	      if(driver.getTitle().equalsIgnoreCase(pagefactory.getHomePageTitleText())) {
 		  System.out.println("Test Passed");
