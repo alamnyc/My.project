@@ -41,8 +41,8 @@ public class StepDefination {
    @Then("^user recieves a confirmation$")
 	public void user_recieves_a_confirmation() throws Throwable {
 		
-	 System.out.println("Actual Home Page Title::"+driver.getTitle());
-	/*	  System.out.println("Expected Home Page Tile::"+ pagefactory.getHomePageTitleText());
+/*	 System.out.println("Actual Home Page Title::"+driver.getTitle());
+		  System.out.println("Expected Home Page Tile::"+ pagefactory.getHomePageTitleText());
 	   // verify
 	      if(driver.getTitle().equalsIgnoreCase(pagefactory.getHomePageTitleText())) {
 		  System.out.println("Test Passed");
@@ -50,8 +50,9 @@ public class StepDefination {
 		  else {
 		  System.out.println("Test Failed");
 		   }
-		//assert or validate
+		  //assert or validate
 		  assertEquals(pagefactory.getHomePageTitleText(),driver.getTitle());*/
+		  
    	driver.quit();
     }
 	@Then("^user closes the browser$")
