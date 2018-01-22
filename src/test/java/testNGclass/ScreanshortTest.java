@@ -1,4 +1,4 @@
-/*package testNGclass;
+package testNGclass;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,22 +12,19 @@ public class ScreanshortTest {
   static WebDriver driver;
   @Test
   public void captureScreenshort() throws Exception {
-  System.setProperty("webdriver.gecko.driver", "./DriverBrowser/geckodriver.exe");
+  System.setProperty("WebDriver.chrome.driver","./DriverBrowser/chromedriver.exe");
   driver = new ChromeDriver();
   driver.get("http://demo.openemr.io/openemr/interface/login/login.php?site=default");
   driver.manage().window().maximize();
-  // Utility.captureScreenshort(driver, "BrowserStared");
+   //Utility.captureScreenshort(driver, "BrowserStared");
   driver.findElement(By.xpath(".//*[@id='email']")).sendKeys("kjghesrliugrh");
   }
   @AfterMethod
   public void teadown(ITestResult result) {
   if (ITestResult.FAILURE==result.getStatus());
-  
-  Utility.captureScreenshort(driver, result.getName());
-  
+  //Utility.captureScreenshort(driver, result.getName());
   driver.quit();
-
-  }}*/
+  }}
 
 
 

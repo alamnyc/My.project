@@ -11,7 +11,7 @@ public class LoginStepDef {
 	WebDriver driver;
 	@Given("^Admin visit homepage$")
 	public void admin_visit_homepage() throws Throwable {
-    System.setProperty("webdriver.gecko.driver", "./DriverBrowser/geckodriver.exe");
+    System.setProperty("webdriver.chrome.driver", "./DriverBrowser/chromedriver.exe");
 	driver = new ChromeDriver();
 	driver.get("http://demo.openemr.io/openemr/interface/login/login.php?site=default");
 	driver.manage().window().maximize();

@@ -10,11 +10,11 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class StepDefination {
+	
     WebDriver driver;
 	@Given("^user visit homepage$")
 	
 	public void user_visit_homepage() throws Throwable {
-		
 	System.setProperty("webdriver.chrome.driver", "./DriverBrowser/chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.get("http://newtours.demoaut.com/");
@@ -41,7 +41,7 @@ public class StepDefination {
    @Then("^user recieves a confirmation$")
 	public void user_recieves_a_confirmation() throws Throwable {
 		
-/*	 System.out.println("Actual Home Page Title::"+driver.getTitle());
+/* System.out.println("Actual Home Page Title::"+driver.getTitle());
 		  System.out.println("Expected Home Page Tile::"+ pagefactory.getHomePageTitleText());
 	   // verify
 	      if(driver.getTitle().equalsIgnoreCase(pagefactory.getHomePageTitleText())) {

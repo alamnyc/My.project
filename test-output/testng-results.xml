@@ -1,37 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="SmokleTestscenario" duration-ms="125" started-at="2018-01-04T19:45:04Z" finished-at="2018-01-04T19:45:05Z">
+  <suite name="Default suite" duration-ms="102" started-at="2018-01-22T04:17:45Z" finished-at="2018-01-22T04:17:45Z">
     <groups>
     </groups>
-    <test name="Sprint1" duration-ms="125" started-at="2018-01-04T19:45:04Z" finished-at="2018-01-04T19:45:05Z">
-      <class name="testNGclass.Testcase1">
-        <test-method status="PASS" signature="TestFB()[pri:0, instance:testNGclass.Testcase1@16f7c8c1]" name="TestFB" duration-ms="17" started-at="2018-01-04T14:45:04Z" finished-at="2018-01-04T14:45:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestFB -->
-      </class> <!-- testNGclass.Testcase1 -->
-      <class name="testNGclass.Testcase2">
-        <test-method status="PASS" signature="TestTwiter()[pri:0, instance:testNGclass.Testcase2@fcd6521]" name="TestTwiter" duration-ms="5" started-at="2018-01-04T14:45:05Z" finished-at="2018-01-04T14:45:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestTwiter -->
-      </class> <!-- testNGclass.Testcase2 -->
-      <class name="testNGclass.Testcase3">
-        <test-method status="FAIL" signature="TestWatsup()[pri:0, instance:testNGclass.Testcase3@27d415d9]" name="TestWatsup" duration-ms="7" started-at="2018-01-04T14:45:05Z" finished-at="2018-01-04T14:45:05Z">
-          <exception class="java.lang.AssertionError">
+    <test name="Default test" duration-ms="102" started-at="2018-01-22T04:17:45Z" finished-at="2018-01-22T04:17:45Z">
+      <class name="testNGclass.ScreanshortTest">
+        <test-method status="FAIL" signature="captureScreenshort()[pri:0, instance:testNGclass.ScreanshortTest@4bb4de6a]" name="captureScreenshort" duration-ms="60" started-at="2018-01-21T23:17:45Z" finished-at="2018-01-21T23:17:45Z">
+          <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertTrue(Assert.java:44)at org.testng.Assert.assertTrue(Assert.java:54)at testNGclass.Testcase3.TestWatsup(Testcase3.java:11)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+              <![CDATA[java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.htmlat com.google.common.base.Preconditions.checkState(Preconditions.java:469)at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:109)at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:116)at testNGclass.ScreanshortTest.captureScreenshort(ScreanshortTest.java:16)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestWatsup -->
-      </class> <!-- testNGclass.Testcase3 -->
-    </test> <!-- Sprint1 -->
-  </suite> <!-- SmokleTestscenario -->
+        </test-method> <!-- captureScreenshort -->
+        <test-method status="FAIL" signature="teadown(org.testng.ITestResult)[pri:0, instance:testNGclass.ScreanshortTest@4bb4de6a]" name="teadown" is-config="true" duration-ms="6" started-at="2018-01-21T23:17:45Z" finished-at="2018-01-21T23:17:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=captureScreenshort status=FAILURE method=ScreanshortTest.captureScreenshort()[pri:0, instance:testNGclass.ScreanshortTest@4bb4de6a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerExceptionat testNGclass.ScreanshortTest.teadown(ScreanshortTest.java:26)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:451)at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)at org.testng.internal.Invoker.invokeMethod(Invoker.java:634)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teadown -->
+      </class> <!-- testNGclass.ScreanshortTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
