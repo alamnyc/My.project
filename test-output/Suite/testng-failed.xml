@@ -3,13 +3,11 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="com.singletoneClass.DriverTestPage">
+      <class name="testNGclass.ScreanshortTest">
         <methods>
-          <include name="TestMethod"/>
-          <include name="setup"/>
-          <include name="TearDown"/>
+          <include name="captureScreenshort"/>
         </methods>
-      </class> <!-- com.singletoneClass.DriverTestPage -->
+      </class> <!-- testNGclass.ScreanshortTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
