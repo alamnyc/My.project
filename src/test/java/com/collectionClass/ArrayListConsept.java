@@ -1,9 +1,12 @@
 package com.collectionClass;
 import java.util.ArrayList;
 import java.util.Iterator;
+
+import org.testng.annotations.Test;
 public class ArrayListConsept {
 	
-	    public static  void main(String[] args) {
+	    @Test
+	    public  void main() {
 		int a [] = new int [3];     // static array size is fixed
 		
 		// Dynamic array -- Array list
@@ -36,7 +39,7 @@ public class ArrayListConsept {
 		 for(int i=0; i<ar.size(); i++) {
 		 System.out.println(ar.get(i));
 		 }
-		 // non generic vs generic
+	 // non generic vs generic
 		 ArrayList<Integer> ar1 = new ArrayList<Integer>();
 		 ar1.add(100);
 		// this is call generic that means which data type i define inside <data type>
@@ -102,6 +105,7 @@ public class ArrayListConsept {
 	    ar7.add("test");
 		ar7.add("selenium");
 		ar7.add("QTP");
+		
 		ArrayList<String> ar8 = new ArrayList<String>();
 		ar8.add("test");
 		ar8.add("java");

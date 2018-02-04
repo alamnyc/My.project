@@ -1,24 +1,22 @@
 package testNGclass;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-
-
-public class AssertionExample {
+    public class AssertionExample {
     @Test
 	public void softAssert(){
-		SoftAssert softAssertion= new SoftAssert();
-		System.out.println("softAssert Method Was Started");
-		softAssertion.assertTrue(false);
-		System.out.println("softAssert Method Was Executed");
+	SoftAssert softAssertion= new SoftAssert();
+	System.out.println("softAssert Method Was Started");
+		
+	softAssertion.assertTrue(false);
+	System.out.println("softAssert Method Was Executed");
 	}
 	@Test
 	public void hardAssert(){
-		System.out.println("hardAssert Method Was Started");
-		Assert.assertTrue(false);
-		System.out.println("hardAssert Method Was Executed");
+	System.out.println("hardAssert Method Was Started");
+		
+	Assert.assertTrue(false);
+	System.out.println("hardAssert Method Was Executed");
 	}}

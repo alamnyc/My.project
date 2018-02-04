@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
     	@Test
 	    public void Certificate() {
     		
-/*		DesiredCapabilities cap = DesiredCapabilities.chrome();
+      	DesiredCapabilities cap = DesiredCapabilities.chrome();
 	
 		// Set ACCEPT_SSL_CERTS  variable to true
 		cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
@@ -26,12 +26,12 @@ import org.testng.annotations.Test;
 		 
 		// Open browser with capability
 		WebDriver driver = new ChromeDriver(cap);
-		driver.get("https://www.cacert.org/");
-		driver.manage().window().maximize();   }}*/
-    		
+		driver.get("https://www.cacert.org/"); 
+		driver.manage().window().maximize();}} 	
+       
     		
 
-       // Create object of DesiredCapabilities class
+       /* // Create object of DesiredCapabilities class
          DesiredCapabilities cap=DesiredCapabilities.internetExplorer();
  
        // Set ACCEPT_SSL_CERTS  variable to true
@@ -44,4 +44,4 @@ import org.testng.annotations.Test;
         WebDriver driver=new InternetExplorerDriver(cap);
         
         driver.get("https://www.cacert.org/");
-		driver.manage().window().maximize(); }}
+		driver.manage().window().maximize(); }}*/

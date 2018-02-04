@@ -9,7 +9,7 @@ import cucumber.api.java.en.When;
 
 public class LoginStepDef {
 	WebDriver driver;
-	@Given("^Admin visit homepage$")
+	@Given("^Admin visit hoFmepage$")
 	public void admin_visit_homepage() throws Throwable {
     System.setProperty("webdriver.chrome.driver", "./DriverBrowser/chromedriver.exe");
 	driver = new ChromeDriver();
