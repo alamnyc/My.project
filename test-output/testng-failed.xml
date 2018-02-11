@@ -1,26 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]">
-  <test name="FirefoxTest(failed)">
-    <parameter name="browser" value="Firefox"/>
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="testNGclass.CrossBrowse">
+      <class name="testNGclass.SikuliHendle">
         <methods>
-          <include name="setup"/>
-          <include name="testParameterWithXML"/>
+          <include name="fileUpload"/>
         </methods>
-      </class> <!-- testNGclass.CrossBrowse -->
+      </class> <!-- testNGclass.SikuliHendle -->
     </classes>
-  </test> <!-- FirefoxTest(failed) -->
-  <test name="EdgeTest(failed)">
-    <parameter name="browser" value="Edge"/>
-    <classes>
-      <class name="testNGclass.CrossBrowse">
-        <methods>
-          <include name="setup"/>
-          <include name="testParameterWithXML"/>
-        </methods>
-      </class> <!-- testNGclass.CrossBrowse -->
-    </classes>
-  </test> <!-- EdgeTest(failed) -->
-</suite> <!-- Failed suite [TestSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

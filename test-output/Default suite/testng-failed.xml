@@ -3,11 +3,11 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testNGclass.AssertionExample">
+      <class name="testNGclass.SikuliHendle">
         <methods>
-          <include name="hardAssert"/>
+          <include name="fileUpload"/>
         </methods>
-      </class> <!-- testNGclass.AssertionExample -->
+      </class> <!-- testNGclass.SikuliHendle -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

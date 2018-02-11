@@ -36,15 +36,23 @@ import org.testng.annotations.Test;
 		System.out.println(hr);
 		//System.out.println("***************done*****************");
 		
-		}
-	    HashMap	<Integer, ArrayListEmployee> emp = new HashMap	<Integer, ArrayListEmployee>();
+		
+	    HashMap<Integer, ArrayListEmployee> emp = new HashMap<Integer, ArrayListEmployee>();
 	    ArrayListEmployee e1 = new ArrayListEmployee("Tom", 25, "admin"); 
 	    ArrayListEmployee e2 = new ArrayListEmployee("Petter", 26, "QA"); 
 	    ArrayListEmployee e3 = new ArrayListEmployee("Alam", 27, "Dev");
 	    
 	    
+	    emp.put(1, e1);
+	    emp.put(2, e2);
+	    emp.put(3, e3);
 	    
-	    
-	   
+	    for(Entry<Integer,ArrayListEmployee> m : emp.entrySet()) {
+	    	int key =m.getKey();
+	    	ArrayListEmployee e = m.getValue();
+	    	System.out.println(key + "Info");
+	    	System.out.println(e.name);
+	    	
+	    }
 	     
-        }
+        }}
